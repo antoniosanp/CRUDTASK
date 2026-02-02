@@ -33,6 +33,8 @@ export function perfilView(){
                         Sesión iniciada correctamente
                     </p>
 
+                    <a href= "#/logout"> cerrar sesion </a>
+
                 </div>
             </div>
         </section>

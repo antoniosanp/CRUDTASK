@@ -1,4 +1,10 @@
+import { store } from "../store/store.js";
 export function navbarLateral(){
+
+      if (!store.current_user) {
+        location.hash = "#/login";
+        return null;
+    }
 
     const sidebar = document.createElement("aside");
     sidebar.className = "border-end bg-white";
@@ -18,21 +24,21 @@ export function navbarLateral(){
         <ul class="nav nav-pills flex-column gap-1">
 
             <li class="nav-item">
-                <a href="#" class="nav-link active d-flex align-items-center gap-2">
+                <a href="#/dashboard" class="nav-link active d-flex align-items-center gap-2">
                     <i class="bi bi-grid"></i>
                     Dashboard
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link text-dark d-flex align-items-center gap-2">
+                <a href="#/myTasks" class="nav-link text-dark d-flex align-items-center gap-2">
                     <i class="bi bi-check2-square"></i>
                     My Tasks
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link text-dark d-flex align-items-center gap-2">
+                <a href="#/perfil" class="nav-link text-dark d-flex align-items-center gap-2">
                     <i class="bi bi-person"></i>
                     Profile
                 </a>

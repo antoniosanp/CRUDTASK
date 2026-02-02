@@ -6,8 +6,10 @@ import { postTarea } from "../services/tareas.services.js";
 
 
 export function nuevaTareaView() {
-
-    const nuevaTarea = document.createElement("section");
+if (store.current_user.rol !== "admin"){
+    alert("usuario inválido"); return
+}
+const nuevaTarea = document.createElement("section");
 nuevaTarea.className = "container mt-5";
 
 nuevaTarea.innerHTML = `

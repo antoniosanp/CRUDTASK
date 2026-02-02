@@ -55,7 +55,7 @@ export function taskHeaderAdmin(){
         <div class="col-12 col-md-6 col-lg-3">
             <div class="card border-0 shadow-sm p-3 h-100">
                 <p class="text-muted mb-1">Overall Progress</p>
-                <h3 class="fw-bold">${(estadisticas.finalizadas/estadisticas.total)*100}%</h3>
+                <h3 class="fw-bold">${((estadisticas.finalizadas/estadisticas.total)*100).toFixed(2)}%</h3>
                 <small class="text-success">
                     ↑ Keep it up
                 </small>
