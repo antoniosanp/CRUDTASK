@@ -36,8 +36,7 @@
       "rol": "visitante"
     }
   ],
-  "productos": [],
-  "ordenes": [],
+  
   "tareas": [
     {
       "id": "bdc8",
@@ -68,6 +67,99 @@
       "descripcion": "vista de tareas y cards de cada tarea, hacer la función para agregar las tareas del store",
       "fecha": "2026-02-03",
       "categoria": "work"
-    }
+    },
+    {
+      "id": "5d8c",
+      "userID": "bf6b",
+      "nombre": "hacer vista de perfil",
+      "prioridad": "high",
+      "estado": "in-progress",
+      "descripcion": "hacer 2 versiones, una para usuario y otra para admin",
+      "fecha": "2026-01-26",
+      "categoria": "work"
+    },
+    {
+      "id": "f1bf",
+      "userID": "2ee7",
+      "nombre": "hacer el login",
+      "prioridad": "low",
+      "estado": "completed",
+      "descripcion": "a",
+      "fecha": "2026-01-26",
+      "categoria": "study"
+    },
+    {
+  "id": "a1e3",
+  "userID": "6737",
+  "nombre": "revisar métricas del dashboard",
+  "prioridad": "medium",
+  "estado": "pending",
+  "descripcion": "verificar contadores y porcentajes",
+  "fecha": "2026-02-04",
+  "categoria": "work"
+},
+{
+  "id": "c7b2",
+  "userID": "4d3c",
+  "nombre": "organizar tareas personales",
+  "prioridad": "low",
+  "estado": "completed",
+  "descripcion": "clasificar tareas por prioridad",
+  "fecha": "2026-01-25",
+  "categoria": "personal"
+},
+{
+  "id": "e93f",
+  "userID": "f944",
+  "nombre": "conectar tareas al store",
+  "prioridad": "high",
+  "estado": "in-progress",
+  "descripcion": "usar store.tareas.data para renderizar cards",
+  "fecha": "2026-02-05",
+  "categoria": "work"
+},
+{
+  "id": "7d4a",
+  "userID": "bf6b",
+  "nombre": "diseñar vista de perfil admin",
+  "prioridad": "medium",
+  "estado": "pending",
+  "descripcion": "mostrar usuarios y acciones administrativas",
+  "fecha": "2026-02-06",
+  "categoria": "work"
+},
+{
+  "id": "9f21",
+  "userID": "2ee7",
+  "nombre": "estudiar flujo de autenticación",
+  "prioridad": "medium",
+  "estado": "completed",
+  "descripcion": "repasar login, logout y roles",
+  "fecha": "2026-01-24",
+  "categoria": "study"
+},
+{
+  "id": "b5c9",
+  "userID": "6737",
+  "nombre": "crear tarea desde formulario",
+  "prioridad": "high",
+  "estado": "in-progress",
+  "descripcion": "validar inputs y hacer POST a json-server",
+  "fecha": "2026-02-03",
+  "categoria": "work"
+},
+{
+  "id": "d8aa",
+  "userID": "4d3c",
+  "nombre": "limpiar estilos del dashboard",
+  "prioridad": "low",
+  "estado": "pending",
+  "descripcion": "ajustar márgenes y sombras",
+  "fecha": "2026-02-07",
+  "categoria": "work"
+}
+
   ]
+  ,"productos": [],
+  "ordenes": []
 }

@@ -14,6 +14,7 @@ import { administrarOrdenView } from "../views/administrarOrden.js";
 import { nuevaTareaView } from "../views/crearTarea.js";
 import { TaskListAdmin } from "../components/taskListAdmin.js";
 import { taskCardAdmin } from "../components/taskCardAdmin.js";
+import { taskAdminView } from "../views/taskAdminView.js";
 
 export function router(){
     getCurrent_user()
@@ -58,7 +59,7 @@ export function router(){
             break;
 
          case "#/taskList":
-            app.append(navbarView(),TaskListAdmin());
+            app.appendChild(taskAdminView());
             break;
         
         case "#/newTask":

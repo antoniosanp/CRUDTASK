@@ -6,6 +6,9 @@ export function TaskListAdmin(){
 taskList.className = "container mt-4";
 
 taskList.innerHTML = `
+
+
+    
     <!-- Header -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <input
@@ -65,6 +68,6 @@ function agregarTareas(div){
 
     for (const t of store.tareas.data){
         div.appendChild(taskCardAdmin(t))
-        console.log(t)
+        
     }
 }
