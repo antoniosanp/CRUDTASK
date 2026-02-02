@@ -15,13 +15,6 @@
       "rol": "visitante"
     },
     {
-      "id": "4693",
-      "nombre": "pedro",
-      "email": "pepe@gmail.com",
-      "password": "1",
-      "rol": "visitante"
-    },
-    {
       "id": "bf6b",
       "nombre": "juan",
       "email": "calvito@gmail.com",
@@ -30,270 +23,41 @@
     },
     {
       "id": "2ee7",
-      "nombre": "angelo",
+      "nombre": "paco",
       "email": "noera@elproposito.com",
       "password": "1",
       "rol": "visitante"
     },
     {
       "id": "4d3c",
-      "nombre": "antonio",
+      "nombre": "santiago",
       "email": "test@gmail.com",
       "password": "123",
       "rol": "visitante"
     }
   ],
-  "productos": [
+  "productos": [],
+  "ordenes": [],
+  "tareas": [
     {
-      "id": "p001",
-      "nombre": "Hamburguesa Clásica",
-      "precio": 12000,
-      "categoria": "hamburguesa"
+      "id": "b6db",
+      "userID": "4d3c",
+      "nombre": "terminar prueba de desempenno",
+      "prioridad": "medium",
+      "estado": "in-progress",
+      "descripcion": "hay que terminar esta prueba, me quedan 6 horas",
+      "fecha": "2026-01-26",
+      "categoria": "work"
     },
     {
-      "id": "p002",
-      "nombre": "Hamburguesa Doble Queso",
-      "precio": 15000,
-      "categoria": "hamburguesa"
-    },
-    {
-      "id": "p003",
-      "nombre": "Hamburguesa BBQ",
-      "precio": 16500,
-      "categoria": "hamburguesa"
-    },
-    {
-      "id": "p004",
-      "nombre": "Papas Fritas",
-      "precio": 6000,
-      "categoria": "hamburguesa"
-    },
-    {
-      "id": "p005",
-      "nombre": "Gaseosa",
-      "precio": 4000,
-      "categoria": "bebida"
-    },
-    {
-      "id": "p006",
-      "nombre": "Limonada Natural",
-      "precio": 5000,
-      "categoria": "bebida"
-    },
-    {
-      "id": "p007",
-      "nombre": "Malteada de Chocolate",
-      "precio": 8000,
-      "categoria": "bebida"
-    },
-    {
-      "id": "p008",
-      "nombre": "Brownie con Helado",
-      "precio": 9000,
-      "categoria": "postre"
-    },
-    {
-      "id": "p009",
-      "nombre": "Cheesecake",
-      "precio": 9500,
-      "categoria": "postre"
-    },
-    {
-      "id": "p010",
-      "nombre": "Helado Sencillo",
-      "precio": 5500,
-      "categoria": "postre"
-    },
-    {
-      "id": "df0a",
-      "nombre": "arroz chino",
-      "precio": 32333,
-      "categoria": "bebida"
-    }
-  ],
-  "ordenes": [
-    {
-      "id": "9238",
-      "userId": "f944",
-      "items": [
-        {
-          "producto": {
-            "id": "p001",
-            "nombre": "Hamburguesa Clásica",
-            "precio": 12000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        },
-        {
-          "producto": {
-            "id": "p005",
-            "nombre": "Gaseosa",
-            "precio": 4000,
-            "categoria": "bebida"
-          },
-          "cantidad": 1
-        },
-        {
-          "producto": {
-            "id": "p009",
-            "nombre": "Cheesecake",
-            "precio": 9500,
-            "categoria": "postre"
-          },
-          "cantidad": 3
-        }
-      ],
-      "estado": "pendiente",
-      "total": 44500
-    },
-    {
-      "id": "4c47",
-      "userId": "f944",
-      "items": [
-        {
-          "producto": {
-            "id": "p001",
-            "nombre": "Hamburguesa Clásica",
-            "precio": 12000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 3
-        },
-        {
-          "producto": {
-            "id": "p005",
-            "nombre": "Gaseosa",
-            "precio": 4000,
-            "categoria": "bebida"
-          },
-          "cantidad": 1
-        }
-      ],
-      "estado": "pendiente",
-      "total": 40000
-    },
-    {
-      "id": "4da7",
-      "userId": "f944",
-      "items": [
-        {
-          "producto": {
-            "id": "p004",
-            "nombre": "Papas Fritas",
-            "precio": 6000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        }
-      ],
-      "estado": "finalizado",
-      "total": 6000
-    },
-    {
-      "id": "69da",
-      "userId": "bf6b",
-      "items": [
-        {
-          "producto": {
-            "id": "p001",
-            "nombre": "Hamburguesa Clásica",
-            "precio": 12000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        },
-        {
-          "producto": {
-            "id": "p004",
-            "nombre": "Papas Fritas",
-            "precio": 6000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        },
-        {
-          "producto": {
-            "id": "p005",
-            "nombre": "Gaseosa",
-            "precio": 4000,
-            "categoria": "bebida"
-          },
-          "cantidad": 1
-        }
-      ],
-      "estado": "en proceso",
-      "total": 22000
-    },
-    {
-      "id": "0218",
-      "userId": "bf6b",
-      "items": [
-        {
-          "producto": {
-            "id": "df0a",
-            "nombre": "arroz chino",
-            "precio": 32333,
-            "categoria": "bebidas"
-          },
-          "cantidad": 3
-        },
-        {
-          "producto": {
-            "id": "p001",
-            "nombre": "Hamburguesa Clásica",
-            "precio": 12000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        }
-      ],
-      "estado": "pendiente",
-      "total": 108999
-    },
-    {
-      "id": "b68a",
-      "userId": "2ee7",
-      "items": [
-        {
-          "producto": {
-            "id": "p008",
-            "nombre": "Brownie con Helado",
-            "precio": 9000,
-            "categoria": "postre"
-          },
-          "cantidad": 6
-        },
-        {
-          "producto": {
-            "id": "p001",
-            "nombre": "Hamburguesa Clásica",
-            "precio": 12000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        },
-        {
-          "producto": {
-            "id": "p002",
-            "nombre": "Hamburguesa Doble Queso",
-            "precio": 15000,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        },
-        {
-          "producto": {
-            "id": "p003",
-            "nombre": "Hamburguesa BBQ",
-            "precio": 16500,
-            "categoria": "hamburguesa"
-          },
-          "cantidad": 1
-        }
-      ],
-      "estado": "en proceso",
-      "total": 97500
+      "id": "bdc8",
+      "userID": "4d3c",
+      "nombre": "terminar prueba de desempenno",
+      "prioridad": "high",
+      "estado": "in-progress",
+      "descripcion": "terminar rápido",
+      "fecha": "2026-01-26",
+      "categoria": "work"
     }
   ]
 }

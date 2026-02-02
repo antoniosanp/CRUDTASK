@@ -14,6 +14,10 @@ export const store = {
         endpoint : `${API_URL}ordenes`,
         data : []
     },
+    tareas: {
+        endpoint : `${API_URL}tareas`,
+        data : []
+    },
     
     current_user : null
 }
@@ -55,6 +59,19 @@ export class Orden{
             total += (item.producto.precio * item.cantidad)
         }
         return total
+    }
+}
+
+export class Tarea{
+    constructor(userID, nombre, prioridad, estado, descripcion, fecha,categoria){
+        this.userID = userID;
+        this.nombre = nombre,
+        this.prioridad = prioridad,
+        this.estado = estado,
+        this.descripcion = descripcion,
+        this.fecha = fecha,
+        this.categoria = categoria
+
     }
 }
 
