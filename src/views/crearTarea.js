@@ -143,12 +143,12 @@ nuevaTarea.innerHTML = `
 
                     <!-- Buttons -->
                     <div class="d-flex justify-content-end gap-2">
-                        <button
+                        <a href="#/dashboard"><button
                             type="button"
                             class="btn btn-outline-secondary"
                         >
                             Cancel
-                        </button>
+                        </button></a>
 
                         <button
                             type="submit"

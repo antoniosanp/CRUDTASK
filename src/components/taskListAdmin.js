@@ -18,9 +18,10 @@ taskList.innerHTML = `
         />
 
         <div class="btn-group">
-            <button class="btn btn-outline-primary active">All Tasks</button>
-            <button class="btn btn-outline-secondary">Pending</button>
-            <button class="btn btn-outline-secondary">Completed</button>
+            <button data-id="" class="btn btn-outline-primary active">All Tasks</button>
+            <button data-id="pending" class="btn btn-outline-secondary">Pending</button>
+            <button data-id="in-progress" class="btn btn-outline-secondary">In-progress</button>
+            <button data-id="completed"class="btn btn-outline-secondary">Completed</button>
         </div>
     </div>
 
@@ -51,7 +52,14 @@ taskList.innerHTML = `
 `;
 
 const listaTask = taskList.querySelector("#listaTask");
-agregarTareas(listaTask)
+agregarTareas(listaTask);
+const grupBotones = taskList.querySelector(".btn-group");
+
+grupBotones.addEventListener("click", (e)=>{
+    if (e.target.className = "btn") {
+        agregarTareas(listaTask,e.target.dataset.id)
+    }
+})
 
 listaTask.addEventListener("click", async (e)=>{
     if (e.target.id === "btnEliminarTask")
@@ -69,10 +77,20 @@ listaTask.addEventListener("click", async (e)=>{
 return taskList
 }
 
-function agregarTareas(div){
-
-    for (const t of store.tareas.data){
+function agregarTareas(div, filtro = ""){
+    div.innerHTML = ""
+    if (!filtro)
+    {
+        for (const t of store.tareas.data){
         div.appendChild(taskCardAdmin(t))
         
+        }
+    }
+    if (filtro){
+        for (const t of store.tareas.data){
+        if (t.estado === filtro)
+        {div.appendChild(taskCardAdmin(t))}
+        
+        }
     }
 }

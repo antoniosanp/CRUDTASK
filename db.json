@@ -156,6 +156,26 @@
       "descripcion": "ojalá pueda hacer esto rápido para tener tiempo de hacer los filtros y los estilos",
       "fecha": "2026-01-26",
       "categoria": "work"
+    },
+    {
+      "id": "a7aa",
+      "userID": "2ee7",
+      "nombre": "Crear filtro por estados",
+      "prioridad": "high",
+      "estado": "completed",
+      "descripcion": "filtrar tareas por estados",
+      "fecha": "2026-02-02",
+      "categoria": "work"
+    },
+    {
+      "id": "1227",
+      "userID": "6737",
+      "nombre": "hacer readme",
+      "prioridad": "high",
+      "estado": "in-progress",
+      "descripcion": "hacer el readme del proyecto",
+      "fecha": "2026-01-26",
+      "categoria": "work"
     }
   ],
   "productos": [],

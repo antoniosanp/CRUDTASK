@@ -21,11 +21,18 @@ export function taskCardAdmin(tarea){
     </td>
     <td>${tarea.fecha}</td>
     <td class="text-end">
-        <button class="btn btn-sm btn-light">✏️</button>
+        <button id="btnEditar" class="btn btn-sm btn-light">✏️</button>
         <button id="btnEliminarTask" data-id = "${tarea.id}" class="btn btn-sm btn-light text-danger">🗑️</button>
     </td>
     
     `
+    const btnEditar = taskCard.querySelector("#btnEditar");
+    btnEditar.addEventListener("click", ()=>{
+
+        if (store.current_user.rol === "admin"){location.hash = `#/detalles/${tarea.id}`} 
+        else alert("you can only edit tasks in myTask tab") 
+
+    })
 
     const btnEliminar = taskCard.querySelector("#btnEliminarTask");
     btnEliminar.addEventListener("click", ()=>
