@@ -7,7 +7,15 @@ import { postTarea } from "../services/tareas.services.js";
 
 export function nuevaTareaView() {
 if (store.current_user.rol !== "admin"){
-    alert("usuario inválido"); return
+    alert("usuario inválido");
+    const textoNodo = document.createElement("div");
+    textoNodo.innerHTML = 
+    `
+        <a href = "#/dashboard"> return <a>
+
+    `
+    return textoNodo
+
 }
 const nuevaTarea = document.createElement("section");
 nuevaTarea.className = "container mt-5";

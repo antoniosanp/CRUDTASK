@@ -85,6 +85,13 @@ const tbody = myTask.querySelector("#tbody");
 
 addMyTaskCards(tbody, tasks);
 
+tbody.addEventListener("click",(e)=>{
+    
+    const carta = e.target.closest(".myTaskCard")
+    console.log(carta.dataset.id)
+    
+})
+
 return myTask
 }
 

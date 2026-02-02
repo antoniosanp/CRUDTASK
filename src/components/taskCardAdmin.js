@@ -29,7 +29,10 @@ export function taskCardAdmin(tarea){
 
     const btnEliminar = taskCard.querySelector("#btnEliminarTask");
     btnEliminar.addEventListener("click", ()=>
-    {taskCard.remove()})
+    {
+      if (store.current_user.rol === "admin"){taskCard.remove()}  
+    
+    })
     return taskCard;
 }
 

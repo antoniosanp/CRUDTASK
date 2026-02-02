@@ -38,16 +38,6 @@
   ],
   "tareas": [
     {
-      "id": "bdc8",
-      "userID": "4d3c",
-      "nombre": "terminar prueba de desempenno",
-      "prioridad": "high",
-      "estado": "in-progress",
-      "descripcion": "terminar rápido",
-      "fecha": "2026-01-26",
-      "categoria": "work"
-    },
-    {
       "id": "0ba0",
       "userID": "6737",
       "nombre": "desayunar",
@@ -128,16 +118,6 @@
       "categoria": "work"
     },
     {
-      "id": "9f21",
-      "userID": "2ee7",
-      "nombre": "estudiar flujo de autenticación",
-      "prioridad": "medium",
-      "estado": "completed",
-      "descripcion": "repasar login, logout y roles",
-      "fecha": "2026-01-24",
-      "categoria": "study"
-    },
-    {
       "id": "b5c9",
       "userID": "6737",
       "nombre": "crear tarea desde formulario",
@@ -165,6 +145,16 @@
       "estado": "in-progress",
       "descripcion": "limpiar vistar el proyecto base, así como funciones y servicios que no están en uso",
       "fecha": "2026-02-02",
+      "categoria": "work"
+    },
+    {
+      "id": "6d23",
+      "userID": "4d3c",
+      "nombre": "Agregar opcion de editar estados de tarea",
+      "prioridad": "medium",
+      "estado": "pending",
+      "descripcion": "ojalá pueda hacer esto rápido para tener tiempo de hacer los filtros y los estilos",
+      "fecha": "2026-01-26",
       "categoria": "work"
     }
   ],

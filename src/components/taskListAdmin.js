@@ -55,9 +55,14 @@ agregarTareas(listaTask)
 
 listaTask.addEventListener("click", async (e)=>{
     if (e.target.id === "btnEliminarTask")
-    {
+    {   if (store.current_user.rol==="admin")
+        {
         const taskId = e.target.dataset.id;
         await deleteTarea(taskId)
+        }
+        else {
+            alert("only the administrator can delete tasks")
+        }
     }
 })
 

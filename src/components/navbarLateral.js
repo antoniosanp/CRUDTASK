@@ -5,7 +5,7 @@ export function navbarLateral(){
         location.hash = "#/login";
         return null;
     }
-
+    const hash = location.hash;
     const sidebar = document.createElement("aside");
     sidebar.className = "border-end bg-white";
     sidebar.style.width = "240px";
@@ -24,21 +24,21 @@ export function navbarLateral(){
         <ul class="nav nav-pills flex-column gap-1">
 
             <li class="nav-item">
-                <a href="#/dashboard" class="nav-link active d-flex align-items-center gap-2">
+                <a id="adash" href="#/dashboard" class="nav-link text-dark  d-flex align-items-center gap-2">
                     <i class="bi bi-grid"></i>
                     Dashboard
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="#/myTasks" class="nav-link text-dark d-flex align-items-center gap-2">
+                <a id = "amytask" href="#/myTasks" class="nav-link text-dark d-flex align-items-center gap-2">
                     <i class="bi bi-check2-square"></i>
                     My Tasks
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="#/perfil" class="nav-link text-dark d-flex align-items-center gap-2">
+                <a id = "aperfil" href="#/perfil" class="nav-link text-dark d-flex align-items-center gap-2">
                     <i class="bi bi-person"></i>
                     Profile
                 </a>
@@ -47,7 +47,30 @@ export function navbarLateral(){
         </ul>
 
     </div>
-`;
+`
+const dash = sidebar.querySelector("#adash");
+const mytask = sidebar.querySelector("#amytask")
+const perfil = sidebar.querySelector("#aperfil")
+
+switch (hash) {
+    case "#/dashboard":
+        dash.classList.toggle("active")
+        break;
+
+    case "#/myTasks":
+        mytask.classList.toggle("active")
+        break;
+
+    case "#/perfil":
+        perfil.classList.toggle("active")
+        break;
+    default:
+        break;
+}
+
+
+
+;
 return sidebar
 
 }
