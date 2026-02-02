@@ -69,7 +69,12 @@ export function navbarView() {
                 <li class="nav-item">
                     <a class="nav-link" href="#/taskList">lista</a>
                 </li>
-                  <li class="nav-item">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#/myTasks">My Tasks</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="#/logout">cerrar sesion</a>
                 </li>
 

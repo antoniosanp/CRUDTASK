@@ -9,7 +9,7 @@ export function iniciarSesion(user){
     const {password, ...userSinPassword} = user;
     store.current_user = userSinPassword;
     localStorage.setItem("current_user", JSON.stringify(store.current_user));
-    location.hash = "#/menu"
+    location.hash = "#/dashboard"
 }
 
 export function cerrarSesion(){

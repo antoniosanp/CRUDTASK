@@ -15,6 +15,9 @@ import { nuevaTareaView } from "../views/crearTarea.js";
 import { TaskListAdmin } from "../components/taskListAdmin.js";
 import { taskCardAdmin } from "../components/taskCardAdmin.js";
 import { taskAdminView } from "../views/taskAdminView.js";
+import { myTaskView } from "../views/myTask.js";
+import { navbarLateral } from "../components/navbarLateral.js";
+import { navbarSuperior } from "../components/navbarSuperior.js";
 
 export function router(){
     getCurrent_user()
@@ -58,13 +61,44 @@ export function router(){
             app.append(navbarView(), administrarOrdenView());
             break;
 
-         case "#/taskList":
-            app.appendChild(taskAdminView());
-            break;
+         case "#/dashboard":
+            
+
+        const contentDashboard = document.createElement("div");
+        contentDashboard.className = "flex-grow-1 d-flex flex-column";
+
+        contentDashboard.append(
+            navbarSuperior(),
+            TaskListAdmin()
+        );
+
+        app.append(
+            navbarLateral(),
+            contentDashboard
+        );
+        break;
         
         case "#/newTask":
             app.append(navbarView(),nuevaTareaView());
             break;
+
+        case "#/myTasks":
+                app.innerHTML = "";
+
+            const content = document.createElement("div");
+            content.className = "flex-grow-1 d-flex flex-column";
+
+            content.append(
+                navbarSuperior(),
+                myTaskView()
+            );
+
+            app.append(
+                navbarLateral(),
+                content
+            );
+            break;
+
 
         case "#/logout":
             console.log("cerrando sesion");
