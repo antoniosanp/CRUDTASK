@@ -17,3 +17,9 @@ export async function pathTareaEstado(id, nuevoEstado) {
     return await getTareas();
     
 }
+
+export async function deleteTarea(id) {
+    await httpDelete(`${store.tareas.endpoint}/${id}`);
+    return await getTareas()
+    
+}

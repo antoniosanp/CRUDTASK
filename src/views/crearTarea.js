@@ -1,12 +1,11 @@
 //administrarProducto.js
-import { postProducto } from "../services/productos.sercives.js";
-import { Producto } from "../store/store.js";
+
 import { store } from "../store/store.js";
 import { Tarea } from "../store/store.js";
 import { postTarea } from "../services/tareas.services.js";
 
 
-export function nuevoProductoView() {
+export function nuevaTareaView() {
 
     const nuevaTarea = document.createElement("section");
 nuevaTarea.className = "container mt-5";
@@ -177,7 +176,7 @@ nuevaTarea.innerHTML = `
 
         e.preventDefault();
         const tarea = new Tarea(asignado.value, nombre.value, prioridad.value, estado.value, descripcion.value, fecha.value, categoria.value);
-       //const producto = new Producto(name.value, Number(precio.value), categoria.value)
+     
         const res = await postTarea(tarea);
         alert("new Task created");
         

@@ -3,6 +3,7 @@ import { store } from "./store.js";
 import { getUsers } from "../services/users.services.js";
 import { getProductos } from "../services/productos.sercives.js";
 import { getOrdenes } from "../services/ordenes.services.js";
+import { getTareas } from "../services/tareas.services.js";
 //--------------------------------------------------------------
 export function iniciarSesion(user){
     const {password, ...userSinPassword} = user;
@@ -45,6 +46,7 @@ export async function iniciarDatos() {
     await getUsers();
     await getProductos();
     await getOrdenes();
+    await getTareas();
     getCurrent_user();
 }
 

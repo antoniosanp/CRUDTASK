@@ -40,16 +40,6 @@
   "ordenes": [],
   "tareas": [
     {
-      "id": "b6db",
-      "userID": "4d3c",
-      "nombre": "terminar prueba de desempenno",
-      "prioridad": "medium",
-      "estado": "in-progress",
-      "descripcion": "hay que terminar esta prueba, me quedan 6 horas",
-      "fecha": "2026-01-26",
-      "categoria": "work"
-    },
-    {
       "id": "bdc8",
       "userID": "4d3c",
       "nombre": "terminar prueba de desempenno",
@@ -57,6 +47,26 @@
       "estado": "in-progress",
       "descripcion": "terminar rápido",
       "fecha": "2026-01-26",
+      "categoria": "work"
+    },
+    {
+      "id": "0ba0",
+      "userID": "6737",
+      "nombre": "desayunar",
+      "prioridad": "medium",
+      "estado": "pending",
+      "descripcion": "cafe",
+      "fecha": "2026-01-26",
+      "categoria": "personal"
+    },
+    {
+      "id": "9cc4",
+      "userID": "f944",
+      "nombre": "hacer vista de lista de tareas",
+      "prioridad": "high",
+      "estado": "in-progress",
+      "descripcion": "vista de tareas y cards de cada tarea, hacer la función para agregar las tareas del store",
+      "fecha": "2026-02-03",
       "categoria": "work"
     }
   ]

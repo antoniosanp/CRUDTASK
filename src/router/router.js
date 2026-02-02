@@ -7,11 +7,13 @@ import { store } from "../store/store.js";
 import { navbarView } from "../components/navbar.js";
 import { menuView } from "../views/menu.js";
 import { notfoundView } from "../views/notfound.js";
-import { nuevoProductoView } from "../views/administrarProducto.js";
 import { getCurrent_user } from "../store/auth.js";
 import { misOrdenesView } from "../views/misOrdenes.js";
 import { perfilView } from "../views/perfil.js";
 import { administrarOrdenView } from "../views/administrarOrden.js";
+import { nuevaTareaView } from "../views/crearTarea.js";
+import { TaskListAdmin } from "../components/taskListAdmin.js";
+import { taskCardAdmin } from "../components/taskCardAdmin.js";
 
 export function router(){
     getCurrent_user()
@@ -43,9 +45,6 @@ export function router(){
             app.append(navbarView(), menuView())
             break;
 
-        case "#/productos":
-            app.append(navbarView(), nuevoProductoView());
-            break;
         case "#/misOrdenes":
             app.append(navbarView(),misOrdenesView());
             break;
@@ -58,6 +57,13 @@ export function router(){
             app.append(navbarView(), administrarOrdenView());
             break;
 
+         case "#/taskList":
+            app.append(navbarView(),TaskListAdmin());
+            break;
+        
+        case "#/newTask":
+            app.append(navbarView(),nuevaTareaView());
+            break;
 
         case "#/logout":
             console.log("cerrando sesion");
