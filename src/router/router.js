@@ -17,6 +17,17 @@ import { taskAdminView } from "../views/dashboard.js";
 import { myTaskView } from "../views/myTask.js";
 import { navbarLateral } from "../components/navbarLateral.js";
 import { navbarSuperior } from "../components/navbarSuperior.js";
+import { detallesTaskView } from "../views/detallesTask.js";
+
+
+    //-----------------------------------------------------------------------------------------
+    //router dinámico
+    
+    
+
+
+    //-----------------------------------------------------------------------------------------
+    //router estático
 
 export function router(){
     getCurrent_user()
@@ -26,6 +37,34 @@ export function router(){
     app.innerHTML = "";
 
     if (!store.current_user && hash !== "#/register") {location.hash = "#/login"}
+
+
+
+    if (hash.startsWith("#/detalles/"))
+    {
+        let hashDetalle = hash.split("/")[2];
+         const vista = detallesTaskView(hashDetalle);
+           const contentDetalles = document.createElement("div");
+            contentDetalles.className = "flex-grow-1 d-flex flex-column";
+
+            contentDetalles.append(
+                navbarSuperior(),
+                vista
+            );
+            
+            app.append(
+                navbarLateral(),
+                contentDetalles
+            );
+
+
+
+
+
+        console.log("estoy en una vista de detalles");
+        return
+        
+    }
     
     //-------------------------------
     const divEspacio = document.createElement("div")
@@ -146,8 +185,18 @@ export function router(){
             break;
             
         default:
-            console.log("vista no encontrada");
-            app.append(notfoundView())
+            const contentNotFound = document.createElement("div");
+            contentNotFound.className = "flex-grow-1 d-flex flex-column";
+
+            contentNotFound.append(
+                divEspacio,
+                notfoundView()
+            );
+            
+            app.append(
+                divEspacio,
+                contentNotFound
+            );
             break;
     }
 

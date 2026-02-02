@@ -122,7 +122,7 @@
       "userID": "6737",
       "nombre": "crear tarea desde formulario",
       "prioridad": "high",
-      "estado": "in-progress",
+      "estado": "pending",
       "descripcion": "validar inputs y hacer POST a json-server",
       "fecha": "2026-02-03",
       "categoria": "work"

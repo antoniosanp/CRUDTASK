@@ -89,6 +89,7 @@ tbody.addEventListener("click",(e)=>{
     
     const carta = e.target.closest(".myTaskCard")
     console.log(carta.dataset.id)
+    location.hash = `#/detalles/${carta.dataset.id}`
     
 })
 
@@ -104,6 +105,7 @@ function addMyTaskCards(div, tasks){
 
     for (const t of tasks){
         div.appendChild(myTaskCard(t))
+
     }
 
 }
