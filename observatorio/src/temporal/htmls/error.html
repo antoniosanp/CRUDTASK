@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Observatorio Urbano y Ambiental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-brand">
+                <svg class="header-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+                <div>
+                    <h1 class="header-title">Observatorio Urbano y Ambiental</h1>
+                    <p class="header-subtitle">Información climática en tiempo real</p>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html">Inicio</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Acerca de</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="error-container">
+                <div class="error-card">
+                    <svg class="error-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                    <h2 class="error-title">Error al cargar los datos</h2>
+                    <p class="error-message">No se pudo conectar con la API de Open-Meteo. Por favor, verifica tu conexión a internet e intenta nuevamente.</p>
+                    <button class="btn-error" onclick="location.reload()">
+                        <svg class="retry-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                        Reintentar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-section-title">Observatorio Urbano y Ambiental</h3>
+                    <p class="footer-text">
+                        Plataforma interactiva para consultar información climática y ambiental en tiempo real.
+                        Apoyando la planeación urbana y la prevención de riesgos.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer-section-title">Enlaces Útiles</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Acerca del proyecto</a></li>
+                        <li><a href="#">Metodología</a></li>
+                        <li><a href="#">Fuentes de datos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-section-title">Fuente de Datos</h3>
+                    <p class="footer-text" style="margin-bottom: 0.75rem;">
+                        Datos proporcionados por Open-Meteo API
+                    </p>
+                    <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer" class="footer-link-external">
+                        open-meteo.com →
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 Observatorio Urbano y Ambiental. Proyecto educativo para GovTech.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

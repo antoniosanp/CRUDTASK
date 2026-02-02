@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin Resultados - Observatorio Urbano y Ambiental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-brand">
+                <svg class="header-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+                <div>
+                    <h1 class="header-title">Observatorio Urbano y Ambiental</h1>
+                    <p class="header-subtitle">Información climática en tiempo real</p>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html">Inicio</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Acerca de</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <form class="search-form">
+                        <div class="search-input-wrapper">
+                            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                            <input type="text" class="search-input" placeholder="Buscar ciudad o proyecto..." value="Madrid">
+                        </div>
+                        <div class="search-filters">
+                            <select class="select-input">
+                                <option value="">Todos los estados</option>
+                                <option value="activo">Activo</option>
+                                <option value="finalizado">Finalizado</option>
+                                <option value="pendiente">Pendiente</option>
+                            </select>
+                            <button type="button" class="filter-button">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Empty State -->
+        <div class="container">
+            <div class="empty-container">
+                <div class="empty-card">
+                    <svg class="empty-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <h2 class="empty-title">No se encontraron resultados</h2>
+                    <p class="empty-message">Intenta ajustar los filtros de búsqueda o busca otro término</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-section-title">Observatorio Urbano y Ambiental</h3>
+                    <p class="footer-text">
+                        Plataforma interactiva para consultar información climática y ambiental en tiempo real.
+                        Apoyando la planeación urbana y la prevención de riesgos.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer-section-title">Enlaces Útiles</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Acerca del proyecto</a></li>
+                        <li><a href="#">Metodología</a></li>
+                        <li><a href="#">Fuentes de datos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-section-title">Fuente de Datos</h3>
+                    <p class="footer-text" style="margin-bottom: 0.75rem;">
+                        Datos proporcionados por Open-Meteo API
+                    </p>
+                    <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer" class="footer-link-external">
+                        open-meteo.com →
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 Observatorio Urbano y Ambiental. Proyecto educativo para GovTech.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
