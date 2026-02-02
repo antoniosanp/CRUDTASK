@@ -12,7 +12,7 @@ export function taskCardAdmin(tarea){
         </div>
     </td>
     <td>
-        <span class="badge bg-primary-subtle text-primary">
+        <span id="prio" class="badge  text-white">
             ${tarea.estado}
         </span>
     </td>
@@ -39,7 +39,18 @@ export function taskCardAdmin(tarea){
     {
       if (store.current_user.rol === "admin"){taskCard.remove()}  
     
-    })
+    });
+
+
+
+   const prioridad = taskCard.querySelector("#prio");
+    if (tarea.estado === "pending") {prioridad.classList.add("bg-danger")}
+
+    if (tarea.estado === "completed") {prioridad.classList.add("bg-success")}
+
+    if (tarea.estado === "in-progress") {prioridad.classList.add("bg-warning")}
+
+
     return taskCard;
 }
 

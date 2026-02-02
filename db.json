@@ -176,6 +176,16 @@
       "descripcion": "hacer el readme del proyecto",
       "fecha": "2026-01-26",
       "categoria": "work"
+    },
+    {
+      "id": "f9ab",
+      "userID": "6737",
+      "nombre": "cambiar los colores de las prioridades y estados",
+      "prioridad": "low",
+      "estado": "in-progress",
+      "descripcion": "bg-warning\nbg-success\nbg-danger",
+      "fecha": "2026-02-05",
+      "categoria": "work"
     }
   ],
   "productos": [],

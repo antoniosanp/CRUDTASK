@@ -10,9 +10,19 @@ export function myTaskCard(task){
                             <small class="text-muted">ID: PHYS-301</small>
                         </td>
                         <td><span class="badge bg-light text-dark">${task.categoria}</span></td>
-                        <td><span class="badge bg-warning text-dark">${task.prioridad}</span></td>
+                        <td><span id="prio" class="badge  text-dark">${task.prioridad}</span></td>
                         <td><span class="badge bg-primary">${task.estado}</span></td>
     
     `
+
+    const prioridad = myTaskCard.querySelector("#prio");
+    if (task.prioridad === "high") {prioridad.classList.add("bg-danger")}
+
+    if (task.prioridad === "low") {prioridad.classList.add("bg-success")}
+
+    if (task.prioridad === "medium") {prioridad.classList.add("bg-warning")}
+
     return myTaskCard
 }
+
+//bg-warning
